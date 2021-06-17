@@ -1,6 +1,6 @@
 # Laravel Liqpay Client
 
-[![Code Coverage](https://img.shields.io/github/v/release/Digital-Threads/Liqpay)](https://github.com/Digital-Threads/Liqpay/releases) [![License](https://img.shields.io/github/license/digital-threads/liqpay)](https://github.com/Digital-Threads/Liqpay/blob/master/LICENSE) [![Code Coverage](https://codecov.io/gh/Digital-Threads/Liqpay/branch/develop/graph/badge.svg)](https://codecov.io/gh/Digital-Threads/Liqpay)
+[![Code Coverage](https://img.shields.io/github/v/release/Digital-Threads/Liqpay)](https://github.com/Digital-Threads/Liqpay/releases) [![License](https://img.shields.io/github/license/digital-threads/liqpay)](https://github.com/Digital-Threads/Liqpay/blob/master/LICENSE) [![Code Coverage](https://codecov.io/gh/Digital-Threads/Liqpay/branch/master/graph/badge.svg)](https://codecov.io/gh/Digital-Threads/Liqpay)
 
 ## Installation
 

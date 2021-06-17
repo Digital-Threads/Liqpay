@@ -28,7 +28,7 @@
     },
     "require": {
         "php": "^7.3|^8.0",
-        "laravel/framework": "^8.25",
+        "laravel/framework": ">=6.20.12",
         "liqpay/liqpay": "^1.2"
     },
     "require-dev": {
