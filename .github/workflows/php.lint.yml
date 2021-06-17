@@ -1,0 +1,33 @@
+name: php.lint
+
+on:
+  pull_request:
+    branches: [master, develop]
+
+jobs:
+  phpcs:
+    runs-on: ubuntu-latest
+
+    container:
+      image: kirschbaumdevelopment/laravel-test-runner:8.0
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Composer Validate
+        run: composer validate
+
+      - name: Cache Composer Packages
+        id: composer-cache
+        uses: actions/cache@v2
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-php-
+      - name: Install Dependencies
+        if: steps.composer-cache.outputs.cache-hit != 'true'
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run Lint
+        run: composer run-script lint

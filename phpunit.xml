@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true">
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">./src</directory>
+    </include>
+  </coverage>
+  <testsuites>
+    <testsuite name="Core">
+      <directory suffix="Test.php">./tests</directory>
+    </testsuite>
+  </testsuites>
+  <php>
+      <server name="LIQPAY_PUBLIC_KEY" value="sandbox_i1828626575"/>
+      <server name="LIQPAY_PRIVATE_KEY" value="sandbox_NYO1EKpeNa4sd91yOMbl92BrBZJMjMjFI47aQN0r"/>
+      <server name="LIQPAY_DEFAULT_CURRENCY" value="USD"/>
+      <server name="LIQPAY_LANUGAGE" value="en"/>
+  </php>
+</phpunit>
+
+
