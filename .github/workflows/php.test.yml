@@ -3,6 +3,8 @@ name: "php.test"
 on:
   pull_request:
     branches: [master, develop]
+  push:
+    branches: [master]
 
 jobs:
   build:
