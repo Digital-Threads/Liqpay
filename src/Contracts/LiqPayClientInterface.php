@@ -12,10 +12,10 @@ interface LiqPayClientInterface
     const API_URL = 'https://www.liqpay.ua/api/';
     const CHECKOUT_URL = 'https://www.liqpay.ua/api/3/checkout';
 
-    const CURRENCY_EUR = LiqPay::CURRENCY_EUR;
-    const CURRENCY_USD = LiqPay::CURRENCY_USD;
-    const CURRENCY_UAH = LiqPay::CURRENCY_UAH;
-    const CURRENCY_RUB = LiqPay::CURRENCY_RUB;
+    const CURRENCY_EUR = 'EUR';
+    const CURRENCY_USD = 'USD';
+    const CURRENCY_UAH = 'UAH';
+    const CURRENCY_RUB = 'RUB';
 
     const LANUGAGE_EN = 'en';
     const LANUGAGE_RU = 'ru';
